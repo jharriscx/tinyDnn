@@ -1,0 +1,36 @@
+{
+    "standards": {},
+    "compilers": {},
+    "libraries": {
+		"RapidJSON": {
+			"CEREAL_RAPIDJSON_MULTILINEMACRO_BEGIN": "do {",
+			"CEREAL_RAPIDJSON_MULTILINEMACRO_END": "} while((void)0, 0)",
+			"CEREAL_RAPIDJSON_NOEXCEPT": "noexcept",
+			"CEREAL_RAPIDJSON_STATIC_ASSERT(x)": "typedef ::CEREAL_RAPIDJSON_NAMESPACE::StaticAssertTest< \\
+      sizeof(::CEREAL_RAPIDJSON_NAMESPACE::STATIC_ASSERTION_FAILURE<bool(x) >)> \\
+    CEREAL_RAPIDJSON_JOIN(StaticAssertTypedef, __LINE__) CEREAL_RAPIDJSON_STATIC_ASSERT_UNUSED_ATTRIBUTE",
+			"CEREAL_RAPIDJSON_NAMESPACE": "my::rapidjson",
+			"CEREAL_RAPIDJSON_JOIN(X, Y)": "CEREAL_RAPIDJSON_DO_JOIN(X, Y)",
+			"CEREAL_RAPIDJSON_DO_JOIN(X, Y)": "CEREAL_RAPIDJSON_DO_JOIN2(X, Y)",
+			"CEREAL_RAPIDJSON_DO_JOIN2(X, Y)": "X##Y",
+			"CEREAL_RAPIDJSON_STATIC_ASSERT_UNUSED_ATTRIBUTE": "__attribute__((unused))",
+			"CEREAL_DLL_EXPORT": "",
+			"CEREAL_USED": "",
+			"CEREAL_ARCHIVE_RESTRICT(I,O)": "typename std::enable_if<cereal::traits::is_same_archive<Archive, I>::value || \\ 
+			cereal::traits::is_same_archive<Archive, O>::value, void>::type",
+			"CEREAL_RAPIDJSON_DISABLEIF_RETURN(C,R)": "typename ::CEREAL_RAPIDJSON_NAMESPACE::internal::DisableIf \\
+        <CEREAL_RAPIDJSON_REMOVEFPTR_(C), \\
+         CEREAL_RAPIDJSON_REMOVEFPTR_(R)>::Type",
+			"CEREAL_RAPIDJSON_NAMESPACE_BEGIN": "namespace my { namespace rapidjson {",
+			"CEREAL_RAPIDJSON_NAMESPACE_END": "} }",
+			"CEREAL_RAPIDJSON_UINT64_C2(H,L)": "((static_cast<uint64_t>(H) << 32) | static_cast<uint64_t>(L))",
+			"CEREAL_REGISTER_ARCHIVE(a)": "",
+			"CEREAL_REGISTER_TYPE(a)": "",
+			"CEREAL_SETUP_ARCHIVE_TRAITS(a,b)": ""
+			
+        }
+	},
+    "operating_systems": {},
+    "architectures": {},
+    "custom": {}
+}
